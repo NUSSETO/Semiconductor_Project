@@ -7517,7 +7517,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Wafer-Map-Defect-Classification">Wafer Map Defect Classification<a class="anchor-link" href="#Wafer-Map-Defect-Classification">¶</a></h1><h2 id="Obejective">Obejective<a class="anchor-link" href="#Obejective">¶</a></h2><p>The primary objective of this project is to develop an <strong>Automated Defect Classification</strong> system using <strong>Convolutional Neural Networks (CNN)</strong>. By automatically categorizing spatial defect patterns on wafer maps, the system aims to replace manual inspection, reduce human error, and accelerate the identification of process anomalies.</p>
+<h1 id="Wafer-Map-Defect-Classification">Wafer Map Defect Classification<a class="anchor-link" href="#Wafer-Map-Defect-Classification">¶</a></h1><h2 id="Objective">Objective<a class="anchor-link" href="#Objective">¶</a></h2><p>The primary objective of this project is to develop an <strong>Automated Defect Classification</strong> system using <strong>Convolutional Neural Networks (CNN)</strong>. By automatically categorizing spatial defect patterns on wafer maps, the system aims to replace manual inspection, reduce human error, and accelerate the identification of process anomalies.</p>
 <h2 id="Business-Value">Business Value<a class="anchor-link" href="#Business-Value">¶</a></h2><p>In semiconductor manufacturing, wafer map patterns provide critical insights into the health of the fabrication process. Specific spatial patterns often correlate with distinct equipment or process failures:</p>
 <ul>
 <li><strong>Yield Ramp-Up:</strong> Rapid identification of defect clusters (e.g., Scratch, Edge-Ring) allows process engineers to perform <strong>Root Cause Analysis (RCA)</strong> faster.</li>
@@ -7548,7 +7548,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Import neceesary packages</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Import necessary packages</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -7732,7 +7732,7 @@ Defect samples: 25519
 <div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Now we visulize the distribution inside the defects</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Now we visualize the distribution inside the defects</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
 
 <span class="n">defect_counts</span> <span class="o">=</span> <span class="n">df_defect</span><span class="p">[</span><span class="s2">"failureType"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -8014,7 +8014,7 @@ X_test shape: (5104, 64, 64, 1)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Now we can initialize the model</span>
@@ -8147,25 +8147,25 @@ X_test shape: (5104, 64, 64, 1)
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>Epoch 1/10
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">20s</span> 60ms/step - accuracy: 0.7101 - loss: 0.8006 - val_accuracy: 0.8437 - val_loss: 0.4365
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">22s</span> 65ms/step - accuracy: 0.7101 - loss: 0.8006 - val_accuracy: 0.8437 - val_loss: 0.4365
 Epoch 2/10
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">20s</span> 62ms/step - accuracy: 0.8362 - loss: 0.4468 - val_accuracy: 0.8454 - val_loss: 0.3986
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">20s</span> 63ms/step - accuracy: 0.8362 - loss: 0.4468 - val_accuracy: 0.8454 - val_loss: 0.3986
 Epoch 3/10
 <span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">20s</span> 64ms/step - accuracy: 0.8646 - loss: 0.3650 - val_accuracy: 0.8903 - val_loss: 0.2872
 Epoch 4/10
 <span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">21s</span> 65ms/step - accuracy: 0.8803 - loss: 0.3227 - val_accuracy: 0.9085 - val_loss: 0.2386
 Epoch 5/10
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">21s</span> 65ms/step - accuracy: 0.8990 - loss: 0.2780 - val_accuracy: 0.9173 - val_loss: 0.2253
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">21s</span> 66ms/step - accuracy: 0.8990 - loss: 0.2780 - val_accuracy: 0.9173 - val_loss: 0.2253
 Epoch 6/10
 <span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">21s</span> 66ms/step - accuracy: 0.9097 - loss: 0.2468 - val_accuracy: 0.9175 - val_loss: 0.2201
 Epoch 7/10
 <span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">21s</span> 66ms/step - accuracy: 0.9187 - loss: 0.2207 - val_accuracy: 0.9203 - val_loss: 0.2270
 Epoch 8/10
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">21s</span> 67ms/step - accuracy: 0.9274 - loss: 0.1977 - val_accuracy: 0.9285 - val_loss: 0.1983
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">21s</span> 66ms/step - accuracy: 0.9274 - loss: 0.1977 - val_accuracy: 0.9285 - val_loss: 0.1983
 Epoch 9/10
 <span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">21s</span> 66ms/step - accuracy: 0.9366 - loss: 0.1747 - val_accuracy: 0.9267 - val_loss: 0.2073
 Epoch 10/10
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">21s</span> 66ms/step - accuracy: 0.9434 - loss: 0.1550 - val_accuracy: 0.9310 - val_loss: 0.1961
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">21s</span> 67ms/step - accuracy: 0.9434 - loss: 0.1550 - val_accuracy: 0.9310 - val_loss: 0.1961
 </pre>
 </div>
 </div>
@@ -8218,7 +8218,7 @@ Epoch 10/10
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre><span class="ansi-bold">160/160</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">2s</span> 9ms/step
+<pre><span class="ansi-bold">160/160</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">2s</span> 10ms/step
 Prediction completed
 </pre>
 </div>
@@ -8249,7 +8249,7 @@ Prediction completed
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Now we process the data again, now resize the images to 96*96 to make the image clearer</span>
@@ -8295,7 +8295,7 @@ Prediction completed
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Now we can nitialize the model again</span>
@@ -8443,25 +8443,25 @@ Prediction completed
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>Epoch 1/10
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">52s</span> 160ms/step - accuracy: 0.7011 - loss: 0.8194 - val_accuracy: 0.8554 - val_loss: 0.4062
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">56s</span> 171ms/step - accuracy: 0.7011 - loss: 0.8194 - val_accuracy: 0.8554 - val_loss: 0.4062
 Epoch 2/10
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">54s</span> 169ms/step - accuracy: 0.8370 - loss: 0.4394 - val_accuracy: 0.8821 - val_loss: 0.3012
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">55s</span> 173ms/step - accuracy: 0.8370 - loss: 0.4394 - val_accuracy: 0.8821 - val_loss: 0.3012
 Epoch 3/10
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">55s</span> 173ms/step - accuracy: 0.8734 - loss: 0.3464 - val_accuracy: 0.9103 - val_loss: 0.2550
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">57s</span> 179ms/step - accuracy: 0.8734 - loss: 0.3464 - val_accuracy: 0.9103 - val_loss: 0.2550
 Epoch 4/10
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">61s</span> 192ms/step - accuracy: 0.8887 - loss: 0.2991 - val_accuracy: 0.9177 - val_loss: 0.2231
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">56s</span> 175ms/step - accuracy: 0.8887 - loss: 0.2991 - val_accuracy: 0.9177 - val_loss: 0.2231
 Epoch 5/10
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">62s</span> 195ms/step - accuracy: 0.9082 - loss: 0.2509 - val_accuracy: 0.9234 - val_loss: 0.2068
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">56s</span> 176ms/step - accuracy: 0.9082 - loss: 0.2509 - val_accuracy: 0.9234 - val_loss: 0.2068
 Epoch 6/10
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">61s</span> 191ms/step - accuracy: 0.9162 - loss: 0.2209 - val_accuracy: 0.9261 - val_loss: 0.1887
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">56s</span> 176ms/step - accuracy: 0.9162 - loss: 0.2209 - val_accuracy: 0.9261 - val_loss: 0.1887
 Epoch 7/10
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">60s</span> 189ms/step - accuracy: 0.9290 - loss: 0.1979 - val_accuracy: 0.9293 - val_loss: 0.1867
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">56s</span> 176ms/step - accuracy: 0.9290 - loss: 0.1979 - val_accuracy: 0.9293 - val_loss: 0.1867
 Epoch 8/10
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">60s</span> 189ms/step - accuracy: 0.9361 - loss: 0.1805 - val_accuracy: 0.9306 - val_loss: 0.1843
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">56s</span> 175ms/step - accuracy: 0.9361 - loss: 0.1805 - val_accuracy: 0.9306 - val_loss: 0.1843
 Epoch 9/10
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">61s</span> 190ms/step - accuracy: 0.9443 - loss: 0.1520 - val_accuracy: 0.9336 - val_loss: 0.1903
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">57s</span> 179ms/step - accuracy: 0.9443 - loss: 0.1520 - val_accuracy: 0.9336 - val_loss: 0.1903
 Epoch 10/10
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">60s</span> 188ms/step - accuracy: 0.9508 - loss: 0.1318 - val_accuracy: 0.9330 - val_loss: 0.1973
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">56s</span> 175ms/step - accuracy: 0.9508 - loss: 0.1318 - val_accuracy: 0.9330 - val_loss: 0.1973
 <span class="ansi-bold">160/160</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">4s</span> 26ms/step
 Prediction completed
 </pre>
@@ -8480,7 +8480,7 @@ Prediction completed
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># To address the observed overfitting and class imbalance, we introduce Geometric Data Augmentation. </span>
@@ -8507,7 +8507,7 @@ Prediction completed
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Now we can nitialize the model again</span>
@@ -8654,46 +8654,46 @@ Prediction completed
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>Epoch 1/20
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">54s</span> 168ms/step - accuracy: 0.6730 - loss: 0.8854 - val_accuracy: 0.8221 - val_loss: 0.4708
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">60s</span> 184ms/step - accuracy: 0.6730 - loss: 0.8854 - val_accuracy: 0.8221 - val_loss: 0.4708
 Epoch 2/20
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">56s</span> 175ms/step - accuracy: 0.8153 - loss: 0.5077 - val_accuracy: 0.8548 - val_loss: 0.3965
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">57s</span> 178ms/step - accuracy: 0.8153 - loss: 0.5077 - val_accuracy: 0.8548 - val_loss: 0.3965
 Epoch 3/20
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">60s</span> 188ms/step - accuracy: 0.8419 - loss: 0.4232 - val_accuracy: 0.8860 - val_loss: 0.3140
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">57s</span> 178ms/step - accuracy: 0.8419 - loss: 0.4232 - val_accuracy: 0.8860 - val_loss: 0.3140
 Epoch 4/20
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">61s</span> 193ms/step - accuracy: 0.8643 - loss: 0.3680 - val_accuracy: 0.9073 - val_loss: 0.2672
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">57s</span> 179ms/step - accuracy: 0.8643 - loss: 0.3680 - val_accuracy: 0.9073 - val_loss: 0.2672
 Epoch 5/20
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">61s</span> 190ms/step - accuracy: 0.8809 - loss: 0.3293 - val_accuracy: 0.9112 - val_loss: 0.2746
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">57s</span> 179ms/step - accuracy: 0.8809 - loss: 0.3293 - val_accuracy: 0.9112 - val_loss: 0.2746
 Epoch 6/20
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">60s</span> 189ms/step - accuracy: 0.8927 - loss: 0.2980 - val_accuracy: 0.9197 - val_loss: 0.2359
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">58s</span> 182ms/step - accuracy: 0.8927 - loss: 0.2980 - val_accuracy: 0.9197 - val_loss: 0.2359
 Epoch 7/20
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">60s</span> 189ms/step - accuracy: 0.9029 - loss: 0.2795 - val_accuracy: 0.9238 - val_loss: 0.2195
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">59s</span> 184ms/step - accuracy: 0.9029 - loss: 0.2795 - val_accuracy: 0.9238 - val_loss: 0.2195
 Epoch 8/20
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">60s</span> 188ms/step - accuracy: 0.9073 - loss: 0.2561 - val_accuracy: 0.9285 - val_loss: 0.2081
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">57s</span> 180ms/step - accuracy: 0.9073 - loss: 0.2561 - val_accuracy: 0.9285 - val_loss: 0.2081
 Epoch 9/20
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">59s</span> 186ms/step - accuracy: 0.9130 - loss: 0.2452 - val_accuracy: 0.9267 - val_loss: 0.2061
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">57s</span> 180ms/step - accuracy: 0.9130 - loss: 0.2452 - val_accuracy: 0.9267 - val_loss: 0.2061
 Epoch 10/20
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">59s</span> 185ms/step - accuracy: 0.9158 - loss: 0.2318 - val_accuracy: 0.9387 - val_loss: 0.1733
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">57s</span> 180ms/step - accuracy: 0.9158 - loss: 0.2318 - val_accuracy: 0.9387 - val_loss: 0.1733
 Epoch 11/20
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">59s</span> 184ms/step - accuracy: 0.9184 - loss: 0.2293 - val_accuracy: 0.9134 - val_loss: 0.2429
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">57s</span> 179ms/step - accuracy: 0.9184 - loss: 0.2293 - val_accuracy: 0.9134 - val_loss: 0.2429
 Epoch 12/20
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">58s</span> 183ms/step - accuracy: 0.9237 - loss: 0.2153 - val_accuracy: 0.9242 - val_loss: 0.2173
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">57s</span> 179ms/step - accuracy: 0.9237 - loss: 0.2153 - val_accuracy: 0.9242 - val_loss: 0.2173
 Epoch 13/20
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">58s</span> 183ms/step - accuracy: 0.9238 - loss: 0.2111 - val_accuracy: 0.9422 - val_loss: 0.1600
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">58s</span> 181ms/step - accuracy: 0.9238 - loss: 0.2111 - val_accuracy: 0.9422 - val_loss: 0.1600
 Epoch 14/20
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">59s</span> 185ms/step - accuracy: 0.9214 - loss: 0.2154 - val_accuracy: 0.9430 - val_loss: 0.1515
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">58s</span> 183ms/step - accuracy: 0.9214 - loss: 0.2154 - val_accuracy: 0.9430 - val_loss: 0.1515
 Epoch 15/20
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">60s</span> 190ms/step - accuracy: 0.9253 - loss: 0.2082 - val_accuracy: 0.9387 - val_loss: 0.1652
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">58s</span> 183ms/step - accuracy: 0.9253 - loss: 0.2082 - val_accuracy: 0.9387 - val_loss: 0.1652
 Epoch 16/20
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">61s</span> 191ms/step - accuracy: 0.9309 - loss: 0.1927 - val_accuracy: 0.9432 - val_loss: 0.1588
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">59s</span> 184ms/step - accuracy: 0.9309 - loss: 0.1927 - val_accuracy: 0.9432 - val_loss: 0.1588
 Epoch 17/20
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">60s</span> 189ms/step - accuracy: 0.9309 - loss: 0.1930 - val_accuracy: 0.9391 - val_loss: 0.1562
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">59s</span> 185ms/step - accuracy: 0.9309 - loss: 0.1930 - val_accuracy: 0.9391 - val_loss: 0.1562
 Epoch 18/20
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">60s</span> 188ms/step - accuracy: 0.9302 - loss: 0.1889 - val_accuracy: 0.9387 - val_loss: 0.1633
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">58s</span> 182ms/step - accuracy: 0.9302 - loss: 0.1889 - val_accuracy: 0.9387 - val_loss: 0.1633
 Epoch 19/20
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">60s</span> 187ms/step - accuracy: 0.9316 - loss: 0.1877 - val_accuracy: 0.9483 - val_loss: 0.1459
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">56s</span> 175ms/step - accuracy: 0.9316 - loss: 0.1877 - val_accuracy: 0.9483 - val_loss: 0.1459
 Epoch 20/20
-<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">60s</span> 187ms/step - accuracy: 0.9298 - loss: 0.1862 - val_accuracy: 0.9404 - val_loss: 0.1594
-<span class="ansi-bold">160/160</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">4s</span> 26ms/step
+<span class="ansi-bold">319/319</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">56s</span> 176ms/step - accuracy: 0.9298 - loss: 0.1862 - val_accuracy: 0.9404 - val_loss: 0.1594
+<span class="ansi-bold">160/160</span> <span class="ansi-green-fg">━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-bold">4s</span> 24ms/step
 Prediction completed
 </pre>
 </div>
@@ -8711,7 +8711,7 @@ Prediction completed
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Visualize the training history</span>
