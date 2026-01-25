@@ -224,6 +224,7 @@ defect_class = np.argmax(prediction)
 Semiconductor_Project/
 ├── main.ipynb              # Main analysis notebook
 ├── main.html               # For easy access
+├── LICENSE                 # MIT License
 ├── requirements.txt        # Python dependencies
 ├── .gitignore              # Git ignore rules
 ├── README.md               # This file
