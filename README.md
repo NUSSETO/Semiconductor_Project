@@ -182,6 +182,8 @@ Sequential Model:
 - Optimizer: Adam
 - Loss function: Categorical Crossentropy
 
+* **Note on Input Size**:  While the exploratory phase and initial training (as seen in `main.ipynb`) experimented with **64x64** resolution for efficiency, the final deployed model architecture has been optimized for **96x96** resolution to capture finer details of defect patterns.
+
 ---
 
 ## 🚀 Usage
@@ -202,7 +204,12 @@ jupyter notebook
 ```python
 # Load the trained model
 from tensorflow.keras.models import load_model
-model = load_model('wafer_defect_model.h5')
+
+# Option 1: Load the modern Keras format (Recommended)
+model = load_model('model/wafer_defect_model.keras')
+
+# Option 2: Load the legacy H5 format
+# model = load_model('model/wafer_defect_model.h5')
 
 # Predict on new wafer map
 prediction = model.predict(preprocessed_wafer_map)
@@ -228,6 +235,9 @@ Semiconductor_Project/
 │   ├── Original_CM.png
 │   ├── Second_CM.png
 │   └── Final_CM.png
+├── model/ 
+│   ├── wafer_defect_model.h5
+│   └── wafer_defect_model.keras
 └── data/
     └── LSWMD.pkl           # Dataset (not tracked in git)
 ```
