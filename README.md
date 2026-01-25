@@ -242,5 +242,11 @@ Semiconductor_Project/
 
 ---
 
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
 **Author**: Jason Huang  
 **Focus**: Semiconductor Manufacturing Quality Control, Machine Learning, Data Analysis
