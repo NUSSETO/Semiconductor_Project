@@ -29,6 +29,10 @@ ENV/
 saved_models/
 checkpoints/
 
+# Exception: Keep our trained models for GitHub
+!model/wafer_defect_model.h5
+!model/wafer_defect_model.keras
+
 # TensorFlow
 *.tfrecord
 *.tflite
