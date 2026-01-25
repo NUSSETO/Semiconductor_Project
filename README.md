@@ -58,6 +58,9 @@ Detecting systematic patterns vs. random defects helps pinpoint specific faulty 
   - 1 normal class: None
 - **Challenge**: Natural class imbalance (common in manufacturing data)
 
+> Please be aware that the original dataset (WM-811K) contains a typo in the column header: `trianTestLabel` is used instead of `trainTestLabel`.
+> To maintain compatibility with the raw data, this project uses the original spelling (`trianTestLabel`) throughout the codebase.
+
 ### Defect Pattern Distribution
 
 ![Defect Size Distribution](img/Defect_size.png)
