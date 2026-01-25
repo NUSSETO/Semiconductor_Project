@@ -107,7 +107,7 @@ pip install -r requirements.txt
 ### 2. **Data Preprocessing**
 ![Resize Example](img/Resize_example.png)
 
-- Resize wafer maps to standardized dimensions (64×64)
+- Resize wafer maps to standardized dimensions (64×64 and 96x96 for comparative analysis)
 - Apply denoising techniques
 - Handle class imbalance
 
