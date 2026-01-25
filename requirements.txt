@@ -1,0 +1,29 @@
+# Core Machine Learning and Deep Learning
+tensorflow>=2.10.0
+keras>=2.10.0
+
+# Data Processing and Analysis
+numpy>=1.23.0
+pandas>=1.5.0
+
+# Image Processing
+opencv-python>=4.6.0
+
+# Visualization
+matplotlib>=3.6.0
+seaborn>=0.12.0
+
+# Scientific Computing
+scipy>=1.9.0
+scikit-learn>=1.1.0
+
+# Jupyter Notebook
+jupyter>=1.0.0
+ipykernel>=6.15.0
+
+# Optional but recommended
+# GPU support (if using NVIDIA GPU)
+# tensorflow-gpu>=2.10.0
+
+# For reproducibility
+# python-dotenv>=0.20.0
