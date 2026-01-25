@@ -2,8 +2,6 @@
 
 An automated defect classification system for semiconductor wafer maps using Convolutional Neural Networks (CNN) to identify and categorize spatial defect patterns.
 
-![Defect Distribution](img/Defect_distribution.png)
-
 ## 📋 Table of Contents
 - [Overview](#overview)
 - [Business Value](#business-value)
@@ -63,9 +61,13 @@ Detecting systematic patterns vs. random defects helps pinpoint specific faulty 
 
 ### Defect Pattern Distribution
 
-![Defect Size Distribution](img/Defect_size.png)
+![Defect Distribution](img/Defect_distribution.png)
 
 The dataset exhibits significant class imbalance, with Edge-Ring and Edge-Loc being the most common defect types.
+
+### Defect Size Distribution
+
+![Defect Size Distribution](img/Defect_size.png)
 
 ---
 
