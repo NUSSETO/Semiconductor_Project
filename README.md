@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/python-3.11+-blue.svg)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.10+-orange.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Accuracy](https://img.shields.io/badge/accuracy-94%25-brightgreen.svg)
+![Accuracy](https://img.shields.io/badge/accuracy-78%25-brightgreen.svg)
 
 An automated defect classification system for semiconductor wafer maps using Convolutional Neural Networks (CNN) to identify and categorize spatial defect patterns.
 
