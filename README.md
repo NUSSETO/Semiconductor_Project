@@ -154,14 +154,9 @@ Investigate model performance through confusion matrices:
 
 | Metric | Value |
 |--------|-------|
-| **Overall Accuracy** | ~94% |
-| **Training Time** | ~20 minutes |
+| **Overall Accuracy** | ~78% |
+| **Training Time** | ~28 minutes |
 | **Model Size** | ~19 MB |
-
-### Key Achievements
-- ✅ Successfully classified 8 distinct defect patterns
-- ✅ Handled severe class imbalance through data augmentation
-- ✅ Achieved production-ready accuracy for manufacturing deployment
 
 ### Training History
 ![Training History](img/Training_history.png)
@@ -172,7 +167,8 @@ Investigate model performance through confusion matrices:
 
 ```python
 Sequential Model:
-├── Conv2D (32 filters, 3×3)
+├── Input (96 x 96 x 3)
+├── Conv2D (32 filters, 5×5)
 ├── MaxPooling2D (2×2)
 ├── Conv2D (64 filters, 3×3)
 ├── MaxPooling2D (2×2)
@@ -183,11 +179,11 @@ Sequential Model:
 ├── Flatten
 ├── Dense (128 units)
 ├── Dropout (0.5)
-└── Dense (9 units, softmax)
+└── Dense (8 units, softmax)
 ```
 
 **Key Features:**
-- Input shape: 96×96×1 (grayscale images)
+- Input shape: 96×96×3 
 - Activation: ReLU for hidden layers, Softmax for output
 - Optimizer: Adam
 - Loss function: Categorical Crossentropy
