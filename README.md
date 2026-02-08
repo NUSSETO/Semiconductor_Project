@@ -155,6 +155,7 @@ Investigate model performance through confusion matrices:
 | Metric | Value |
 |--------|-------|
 | **Overall Accuracy** | ~78% |
+| **Macro Recall** | ~79% |
 | **Training Time** | ~28 minutes |
 | **Model Size** | ~19 MB |
 
